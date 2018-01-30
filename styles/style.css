@@ -1,0 +1,16 @@
+#header{
+    height: 50px;
+    margin-top:10px
+}
+#header p{
+    float: left;
+    font-size: large;
+    font-family: "Helvetica Neue";
+}
+.middle{
+    margin-top:20px
+}
+.footer{
+    margin-bottom: 50px;
+    width: 100%;
+}
