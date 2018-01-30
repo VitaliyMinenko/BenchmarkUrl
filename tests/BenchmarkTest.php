@@ -12,7 +12,6 @@ require('app/models/Benchmark.php');
  */
 class BenchmarkTest extends PHPUnit_Framework_TestCase
 {
-
     public $obj;
     public $urlsArr;
     public $our;
