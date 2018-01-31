@@ -21,15 +21,8 @@ class Config
      * @var array
      */
     public static $config = [
-        'title' => 'My Benchark',
+        'title' => 'Game app',
         'tmp_path' =>'temp/',
-        'filename' => 'log.txt',
-        'mail_to' => 'exemple@mail.com',
-        'mail_subject' => 'Result benchmark',
-        'sms_username' =>'testUser',
-        'sms_password' =>'aqwsxcde123',
-        'sms_to' =>'4558886995',
-        'sms_from' =>'4558889658',
     ];
 
     /**

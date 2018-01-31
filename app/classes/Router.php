@@ -21,21 +21,16 @@ class Router
      */
     public function start()
     {
-        require_once('app/controllers/BenchmarkController.php');
         $route = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
         $routing = [
-            //  Routs for application.
-            '/' => [
-                'controller' => 'Benchmark',
-                'action' => 'index',
+            //  Routs for api.
+            '/Api/setState/' => [
+                'controller' => 'Api',
+                'action' => 'setState',
             ],
-            '/benchmark/test' => [
-                'controller' => 'Benchmark',
-                'action' => 'test',
-            ],
-            '/benchmark/download' => [
-                'controller' => 'Benchmark',
-                'action' => 'download',
+            '/Api/getNext/' => [
+                'controller' => 'Api',
+                'action' => 'getNext',
             ],
         ];
         if (isset($routing[$route])) {
